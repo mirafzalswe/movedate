@@ -5,9 +5,7 @@ class Page(models.Model):
         ('tutorial', 'Tutorial'),
         ('video', 'Video'),
     )
-    type = models.CharField(max_length=10, choices=TYPE_CHOICES, default='tutorial')
-    content = models.CharField(max_length=254)
-    video = models.URLField()
+    type = models.CharField(max_length=10, choices=TYPE_CHOICES)
 
 
     def __str__(self):
